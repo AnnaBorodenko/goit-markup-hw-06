@@ -56,6 +56,9 @@ a:hover {
 }
 
 /* body */
+.solutions-title {
+  background-color: #2f303a;
+}
 .solutions {
   font-family: Roboto;
   font-style: normal;
@@ -65,25 +68,27 @@ a:hover {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: grey;
+  color: #ffffff;
 }
-.make-order {
+.make-order-button {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
+  text-align: center;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: grey;
+  color: #212121;
+  border: 1px solid #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.make-order:focus {
+.make-order-button:hover,
+.make-order-button:focus {
   color: #ffffff;
-  background: #2196f3;
+  background-color: #2196f3;
 }
-advantage1 {
+.avantage-title {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -93,52 +98,13 @@ advantage1 {
   text-transform: uppercase;
   color: #212121;
 }
-details of advantage1 {
+.advantage-text {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
-}
-advantage2 {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: #212121;
-}
-details of advantage2 {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  color: #757575;
-}
-advantage3 {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: #212121;
-}
-details of advantage3 {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  color: #757575;
-}
-advantage4 {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: #212121;
-}
-details of advantage4 {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
   color: #757575;
 }
 .our-projects {
@@ -241,7 +207,7 @@ details of advantage4 {
   letter-spacing: 0.03em;
   color: #757575;
 }
-.Technokryak {
+.google-link {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -250,7 +216,34 @@ details of advantage4 {
   letter-spacing: 0.06em;
   color: #212121;
 }
-.WebSite {
+.graphics {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.applications {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.business {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.projects {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -260,102 +253,38 @@ details of advantage4 {
   color: #757575;
 }
 
-.New-Orlean {
-  font-family: Roboto;
+.logo-footer {
+  font-family: Raleway;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: #212121;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #ffffff;
 }
-.Design {
+.gallery-footer-adress {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: #757575;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #ffffff;
 }
-.SeaFood {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: #212121;
+.gallery-footer-adress:hover {
+  color: #2196f3;
 }
-.Application {
+.gallery-footer {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: #757575;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.6);
 }
-.Project-Prime {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: #212121;
+.footer-style {
+  background-color: #2f303a;
 }
-.Marketing2 {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-.Project-Boxes {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: #212121;
-}
-.Inspiration {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: #212121;
-}
-.Limited-Edition {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: #212121;
-}
-.Project-LAB {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: #212121;
-}
-.Growing-Business {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: #212121;
+.gallery-footer:hover {
+  color: #2196f3;
 }
