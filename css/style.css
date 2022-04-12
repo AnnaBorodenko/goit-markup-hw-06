@@ -22,6 +22,7 @@ body {
 header {
   padding-top: 25px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 
 h1,
@@ -34,12 +35,15 @@ p {
 }
 ul,
 ol {
+  list-style: none;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
 }
+
 img {
   display: block;
+  max-width: 100%;
 }
 button {
   cursor: pointer;
@@ -50,15 +54,14 @@ button {
   align-items: center;
   justify-content: space-between;
 }
-.projects-container container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.navigation-item:not(:last-child) {
+  padding-right: 50px;
 }
+
 .our-projects-list {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+}
+.our-projects-item:not(:last-child) {
   margin-right: 30px;
 }
 .navigation {
@@ -67,52 +70,34 @@ button {
 }
 .navigation-on-site {
   display: flex;
-  align-items: center;
-  justify-content: stretch;
+  justify-content: center;
 }
 
+.button-portfolio-item:not(:last-child) {
+  margin-right: 8px;
+}
 .button-portfolio-item {
-  justify-content: space-between;
-  position: relative;
-  padding-bottom: 50px;
-  flex-wrap: wrap;
-  margin: 0 auto;
+  margin-bottom: 50px;
 }
-.button-portfolio-item:not(:last-child):not(:last-child) {
-  padding-left: 8px;
+.title {
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
-.advantage-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 30px;
-  padding-bottom: 90px;
+.section {
+  padding: 94px 0;
 }
 .our-masters {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-right: 30px;
-  padding-bottom: 90px;
 }
-.advantage-list container {
+.advantage-list {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 .advantage-item:not(:last-child) {
-  padding-right: 30px;
+  margin-right: 30px;
 }
 .our-advantages {
-  padding-top: 90px;
-}
-
-.what-we-can-do {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-right: 30px;
   flex-wrap: wrap;
 }
 
@@ -131,22 +116,10 @@ span {
   color: var(--button-color);
 }
 
-.navigation-on-site,
-.contacts,
-.advantage-list,
-.our-projects-list,
-.our-masters,
-.what-we-can-do {
-  list-style: none;
-  text-decoration: none;
-}
-.navigation-item:not(:last-child) {
+.what-we-can-do .navigation-item:not(:last-child) {
   margin-right: 40px;
 }
-.team-section {
-  padding-top: 94;
-}
-.what-we-can-do-list-section {
+.team-section .what-we-can-do-list-section {
   padding-bottom: 90px;
 }
 .gallery {
@@ -186,8 +159,7 @@ span {
 /* body */
 .solutions-title {
   background-color: #2f303a;
-  width: 1600px;
-  height: 600px;
+  padding: 200px 0;
 }
 .solutions {
   font-weight: 900;
@@ -196,12 +168,7 @@ span {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  padding-top: 200px;
-  padding-bottom: 30px;
-  padding-left: 250px;
-  padding-right: 250px;
-  display: flex;
-  justify-content: center;
+  padding-bottom: 40px;
 }
 .make-order-button {
   font-weight: 700;
@@ -219,6 +186,7 @@ span {
   border-radius: 4px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-top: 30px;
 }
 .make-order-button:hover,
 .make-order-button:focus {
@@ -263,13 +231,14 @@ span {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
-.about-our-team {
-  background-color: #f5f4fa;
+.our-projects-item {
+  display: flex;
+  flex-wrap: wrap;
 }
 .team-section {
-  padding-top: 90px;
+  background-color: #f5f4fa;
 }
 .our-masters:not(:last-child) {
   margin-left: 30px;
@@ -282,9 +251,21 @@ span {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
-  padding-top: 90px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
+
+.our-masters-team:not(:last-child) {
+  margin-right: 30px;
+}
+.our-master-name {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.our-projects-list {
+  padding-bottom: 4px;
+  padding-top: 20px;
+}
+
 .Igor {
   font-weight: 500;
   font-size: 16px;
@@ -349,12 +330,32 @@ span {
   letter-spacing: 0.03em;
   color: var(--paragraph-color);
 }
+.card-set {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+  box-sizing: border-box;
+}
+.card-set > .project-item-list {
+  flex-basis: calc(100% / 3 -30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  background: #ffffff;
+}
+.project-item-list {
+  outline: 1px solid rgba(238, 238, 238, 1);
+}
 .google-link {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-color);
+  margin-top: 20px;
 }
 .graphics {
   font-weight: 700;
@@ -362,6 +363,7 @@ span {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-color);
+  margin-top: 20px;
 }
 .applications {
   font-weight: 700;
@@ -369,6 +371,7 @@ span {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-color);
+  margin-top: 20px;
 }
 .business {
   font-weight: 700;
@@ -376,6 +379,7 @@ span {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-color);
+  margin-top: 20px;
 }
 .projects {
   font-weight: normal;
@@ -383,6 +387,7 @@ span {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--paragraph-color);
+  margin-top: 4px;
 }
 
 .logo-footer {
@@ -421,6 +426,8 @@ span {
 }
 .footer-style {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .gallery-footer:hover {
   color: var(--button-color);
@@ -428,4 +435,12 @@ span {
 .gallery-footer,
 .gallery-footer:hover {
   text-decoration: none;
+}
+
+.gallery-footer {
+  padding-bottom: 9px;
+  padding-top: 9px;
+}
+.gallery-footer-item {
+  margin-top: 20px;
 }
