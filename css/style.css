@@ -44,6 +44,7 @@ ol {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 button {
   cursor: pointer;
@@ -55,14 +56,7 @@ button {
   justify-content: space-between;
 }
 .navigation-item:not(:last-child) {
-  padding-right: 50px;
-}
-
-.our-projects-list {
-  display: flex;
-}
-.our-projects-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 50px;
 }
 .navigation {
   display: flex;
@@ -72,18 +66,46 @@ button {
   display: flex;
   justify-content: center;
 }
+.navigation-on-site-portfolio {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.our-projects-list {
+  display: flex;
+}
+.our-projects-item:not(:last-child) {
+  margin-right: 30px;
+}
+.our-projects {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  margin-bottom: 50px;
+}
 
 .button-portfolio-item:not(:last-child) {
   margin-right: 8px;
 }
-.button-portfolio-item {
-  margin-bottom: 50px;
-}
+
 .title {
   margin-bottom: 10px;
-  text-transform: uppercase;
 }
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .section {
   padding: 94px 0;
 }
@@ -99,6 +121,9 @@ button {
 .our-advantages {
   display: flex;
   flex-wrap: wrap;
+}
+.about-us {
+  padding-top: 0px;
 }
 
 /* header */
@@ -146,8 +171,9 @@ span {
   text-decoration: none;
   list-style: none;
 }
-.contact-number {
-  margin-left: 40px;
+.contact-mail,
+.contact-number:not(:last-child) {
+  margin-right: 40px;
 }
 .contact-number:hover {
   color: var(--button-color);
@@ -168,7 +194,6 @@ span {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  padding-bottom: 40px;
 }
 .make-order-button {
   font-weight: 700;
@@ -180,7 +205,7 @@ span {
   transform: translate(-50%, 0);
   width: 200px;
   height: 50px;
-  background-color: white;
+  background-color: #2196f3;
   color: var(--main-color);
   border: 1px solid #000000;
   border-radius: 4px;
@@ -191,7 +216,7 @@ span {
 .make-order-button:hover,
 .make-order-button:focus {
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: #188ce8;
 }
 .button-portfolio {
   font-weight: 700;
@@ -216,6 +241,7 @@ span {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  text-transform: uppercase;
 }
 .advantage-list .advantage-text {
   font-weight: normal;
@@ -224,19 +250,7 @@ span {
   letter-spacing: 0.03em;
   color: var(--paragraph-color);
 }
-.our-projects {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-color);
-  margin-bottom: 50px;
-}
-.our-projects-item {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 .team-section {
   background-color: #f5f4fa;
 }
@@ -261,11 +275,6 @@ span {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.our-projects-list {
-  padding-bottom: 4px;
-  padding-top: 20px;
-}
-
 .Igor {
   font-weight: 500;
   font-size: 16px;
@@ -273,6 +282,7 @@ span {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  margin-bottom: 10px;
 }
 .Product-Designer {
   font-weight: normal;
@@ -289,6 +299,7 @@ span {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  margin-bottom: 10px;
 }
 .Frontend-Developer {
   font-weight: normal;
@@ -305,6 +316,7 @@ span {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  margin-bottom: 10px;
 }
 .Marketing {
   font-weight: normal;
@@ -321,6 +333,7 @@ span {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  margin-bottom: 10px;
 }
 .UI-Designer {
   font-weight: normal;
@@ -331,23 +344,22 @@ span {
   color: var(--paragraph-color);
 }
 .card-set {
-  padding: 0;
-  margin: 0;
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
-  margin-left: -30px;
-  box-sizing: border-box;
+  margin-left: -24px;
 }
 .card-set > .project-item-list {
-  flex-basis: calc(100% / 3 -30px);
-  margin-left: 30px;
+  flex-basis: calc(100% / 3 -24px);
+  margin-left: 24px;
   margin-top: 30px;
   background: #ffffff;
 }
+.projects-item {
+  padding: 20px 24px;
+}
 .project-item-list {
-  outline: 1px solid rgba(238, 238, 238, 1);
+  border: 1px solid #eeeeee;
 }
 .google-link {
   font-weight: 700;
@@ -355,7 +367,6 @@ span {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-color);
-  margin-top: 20px;
 }
 .graphics {
   font-weight: 700;
@@ -363,7 +374,6 @@ span {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-color);
-  margin-top: 20px;
 }
 .applications {
   font-weight: 700;
@@ -371,7 +381,6 @@ span {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-color);
-  margin-top: 20px;
 }
 .business {
   font-weight: 700;
@@ -379,7 +388,6 @@ span {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-color);
-  margin-top: 20px;
 }
 .projects {
   font-weight: normal;
@@ -387,7 +395,6 @@ span {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--paragraph-color);
-  margin-top: 4px;
 }
 
 .logo-footer {
@@ -436,11 +443,11 @@ span {
 .gallery-footer:hover {
   text-decoration: none;
 }
-
-.gallery-footer {
-  padding-bottom: 9px;
-  padding-top: 9px;
+.logo-footer {
+  margin-bottom: 20px;
+  display: block;
 }
-.gallery-footer-item {
-  margin-top: 20px;
+
+.contacts-footer li:not(:last-child) {
+  margin-bottom: 9px;
 }
