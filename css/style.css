@@ -164,6 +164,7 @@ span {
   display: flex;
   justify-content: center;
 }
+
 .contact-number,
 .contact-mail {
   font-weight: 500;
@@ -178,13 +179,13 @@ span {
 .contact-number:not(:last-child) {
   margin-right: 40px;
 }
-.contact-number:hover, 
+.contact-number:hover ,
 .contact-number:focus
  {
   color: var(--button-color);
 }
-.contact-mail:hover,
-.contact-number:focus {
+.contact-mail:hover ,
+.contact-mail:focus {
   color: var(--button-color);
 }
 .envelope-icon {
@@ -268,12 +269,7 @@ span {
 
 .advantage-list {
   display: flex;
-  flex-wrap: wrap;
 }
-/* .advantage-item-icon {
-  display: flex;
-  flex-wrap: wrap;
-} */
 
 .advantage-item:not(:last-child) {
   margin-right: 30px;
@@ -293,33 +289,24 @@ span {
   letter-spacing: 0.03em;
   color: var(--paragraph-color);
 }
-/* .advantage-list-icon {
+.advantage-link {
   display: block;
   align-items: center;
   justify-content: center;
   width: 270px;
   height: 120px;
-  background: #F5F4FA
+  border: 1px solid #AFB1B8;
   border-radius: 4px;
+  background-color: #F5F4FA;
+  margin-bottom:30px ;
 }
 
-.icons-advantages {
+.advantage-icons {
   fill: rgba(33, 33, 33, 1);
   background-color: #F5F4FA;
+  margin-left: 100px;
+  margin-top: 25px;
 }
- */
-/* .card-set-advantages {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -50px;
-}
-.card-set-advantages>.advantage-item {
-  flex-basis: calc(100% / 4 -30px);
-  margin-left: 30px;
-  margin-top: 50px;
-  background: #ffffff;
-} */
 
 .about-us {
   padding-top: 0px;
@@ -489,7 +476,7 @@ span {
   flex-wrap: wrap;
 }
 .clients-list:not(:last-child) {
-  margin-left: 30px;
+  margin-right: 30px;
 }
 .clients-link {
   display: block;
@@ -510,7 +497,46 @@ span {
 .clients-link:focus .clients-icon {
   fill: rgba(33, 150, 243, 1);
 }
+.join-us-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+.join-us-item {
+  color: #FFFFFF;
+}
 
+.social-list-icon-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.social-list-icon-footer:hover .icons,
+.social-list-icon-footer:focus .icons {
+  fill: rgba(255, 255, 255, 1);
+  background-color: #2196F3;
+}
+.social-list-icon-footer:hover {
+  background-color: #2196f3;
+}
+
+.icons-footer {
+  fill: #FFFFFF;
+}
+.icons-list-item-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons-list-list-footer:not(:last-child) {
+  margin-right: 10px;
+}
 /*Body Portfolio*/
 
 .navigation-on-site-portfolio {
@@ -547,11 +573,12 @@ span {
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
-  margin-left: -30px;
+  margin-left: -24px;
+  
 }
 .card-set > .project-item-list {
-  flex-basis: calc(100% / 3 -30px);
-  margin-left: 30px;
+  flex-basis: calc(100% / 3 -24px);
+  margin-left: 24px;
   margin-top: 30px;
   background: #ffffff;
 }
