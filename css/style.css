@@ -165,9 +165,7 @@ span {
 .navigation-on-site {
   display: flex;
   justify-content: center;
-
 }
-
 
 .contact-number,
 .contact-mail {
@@ -183,32 +181,33 @@ span {
 .contact-number:not(:last-child) {
   margin-right: 40px;
 }
-.contact-number:hover ,
-.contact-number:focus {
-  color: var(--button-color);
-}
-.contact-mail:hover ,
-.contact-mail:focus {
-  color: var(--button-color);
-}
+
 .envelope-icon {
   fill: #757575;
-  margin-left:10px;
+  margin-right:10px;
   position: center;
 }
-.envelope-icon:hover,
-.envelope-icon:focus {
-  fill: #2196F3;
+.contact-mail:hover .envelope-icon,
+.contact-mail:focus .envelope-icon {
+  fill: rgba(33, 150, 243, 1);
 }
 .phone-icon {
   fill: #757575;
-  margin-left: 10px;
+  margin-right: 10px;
   position: center;
 }
-.phone-icon:hover,
-.phone-icon:focus{
-  fill:#2196F3;
+.contact-number:hover .phone-icon,
+.contact-number:focus .phone-icon {
+  fill: rgba(33, 150, 243, 1);
 }
+
+.contact-mail:hover {
+  color: #2196F3;
+}
+.contact-number:hover {
+  color: #2196F3;
+}
+
 /* Body Main*/
 
 .title {
@@ -436,7 +435,6 @@ span {
   margin-left: 30px;
   margin-top: 50px;
   background: #ffffff;
-  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2); */
 }
 .card-set-masters>.our-masters-team:hover,
 .card-set-masters>.our-masters-team:focus {
@@ -463,6 +461,7 @@ span {
 .social-list-icon:hover {
   background-color: #2196f3; 
 }
+
 .icons {
   fill: #afb1b8;
 }
@@ -471,6 +470,17 @@ span {
   fill: rgba(255, 255, 255, 1);
   background-color: #2196F3;
 }
+
+/* .icons-list-item:hover {
+  background-color: #2196f3;
+}
+.icons-list-list:hover .icons,
+.icons-list-list:focus .icons {
+  fill: rgba(255, 255, 255, 1);
+  background-color: #2196F3;
+} */
+
+
 .clients {
   font-family: 'Roboto';
   font-style: normal;
