@@ -10,6 +10,9 @@
 :root {
   --icon-header-color: #757575;
 }
+:root {
+  --button-portfolio-background:rgba(245, 244, 250, 1)
+}
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
@@ -185,7 +188,7 @@ span {
 .envelope-icon {
   fill: #757575;
   margin-right:10px;
-  position: center;
+  align-items:baseline;
 }
 .contact-mail:hover .envelope-icon,
 .contact-mail:focus .envelope-icon {
@@ -194,17 +197,19 @@ span {
 .phone-icon {
   fill: #757575;
   margin-right: 10px;
-  position: center;
+  align-items:baseline
 }
 .contact-number:hover .phone-icon,
 .contact-number:focus .phone-icon {
   fill: rgba(33, 150, 243, 1);
 }
 
-.contact-mail:hover {
+.contact-mail:hover,
+.contact-mail:focus {
   color: #2196F3;
 }
-.contact-number:hover {
+.contact-number:hover,
+.contact-number:focus {
   color: #2196F3;
 }
 
@@ -303,14 +308,12 @@ span {
   background-color: #F5F4FA;
   margin-bottom:30px ;
 }
-
 .advantage-icons {
   fill: rgba(33, 33, 33, 1);
   background-color: #F5F4FA;
   margin-left: 100px;
   margin-top: 25px;
 }
-
 .about-us {
   padding-top: 0px;
 }
@@ -386,7 +389,7 @@ span {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--paragraph-color);
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 .Nikolaj {
   font-weight: 500;
@@ -404,7 +407,7 @@ span {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--paragraph-color);
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 .Mihail {
   font-weight: 500;
@@ -422,7 +425,7 @@ span {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--paragraph-color);
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 .card-set-masters {
   display: flex;
@@ -449,6 +452,14 @@ span {
 .icons-list-list:not(:last-child) {
   margin-right: 10px;
 }
+.icons {
+  fill: #afb1b8;
+}
+.icons:hover,
+.icons:focus {
+  fill:#FFFFFF;
+}
+
 .social-list-icon {
   display: flex;
   align-items: center;
@@ -458,28 +469,15 @@ span {
   background-color: #ffffff;
   border-radius: 50%;
 }
-.social-list-icon:hover {
-  background-color: #2196f3; 
-}
-
-.icons {
-  fill: #afb1b8;
+.social-list-icon:hover,
+.social-list-icon:focus {
+  background-color: #2196F3;
 }
 .social-list-icon:hover .icons,
 .social-list-icon:focus .icons {
   fill: rgba(255, 255, 255, 1);
   background-color: #2196F3;
 }
-
-/* .icons-list-item:hover {
-  background-color: #2196f3;
-}
-.icons-list-list:hover .icons,
-.icons-list-list:focus .icons {
-  fill: rgba(255, 255, 255, 1);
-  background-color: #2196F3;
-} */
-
 
 .clients {
   font-family: 'Roboto';
@@ -544,13 +542,20 @@ span {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
-.social-list-icon-footer:hover .icons,
-.social-list-icon-footer:focus .icons {
+.social-list-icon-footer:hover .icons-footer,
+.social-list-icon-footer:focus .icons-footer {
   fill: rgba(255, 255, 255, 1);
   background-color: #2196F3;
 }
-.social-list-icon-footer:hover {
+.icons-footer:hover,
+.icons-footer:focus {
+  fill: rgba(255, 255, 255, 1)
   background-color: #2196f3;
+}
+.social-list-icon-footer:hover,
+.social-list-icon-footer:focus {
+  fill: rgba(255, 255, 255, 1);
+  background-color: #2196F3;
 }
 
 .icons-footer {
@@ -560,7 +565,6 @@ span {
   display: flex;
   align-items: center;
 }
-
 .icons-list-list-footer:not(:last-child) {
   margin-right: 10px;
 }
@@ -580,14 +584,49 @@ span {
   line-height: 1.88;
   text-align: left;
   letter-spacing: 0.06em;
-  background-color: #f5f4fa;
-  color: var(--main-color);
+  background-color: var(--button-portfolio-background);
+  color: rgba(33, 33, 33, 1);
   border-radius: 4px;
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
   color: #f5f4fa;
-  background-color: #2196f3;
+  background-color: #2196F3;
+}
+.button1 {
+  width: 73px;
+  height: 38px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.button2 {
+  width: 128px;
+  height: 38px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.button3 {
+  width: 145px;
+  height: 38px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.button4 {
+  width: 103px;
+  height: 38px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.button5 {
+  width: 130px;
+  height: 38px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .project-item-list {
   border: 1px solid #eeeeee;
@@ -599,12 +638,12 @@ span {
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
-  margin-left: -24px;
-  
+  margin-left: -30px;
 }
+
 .card-set > .project-item-list {
-  flex-basis: calc(100% / 3 -24px);
-  margin-left: 24px;
+  flex-basis: calc(100% / 3 -30px);
+  margin-left: 30px;
   margin-top: 30px;
   background: #ffffff;
 }
