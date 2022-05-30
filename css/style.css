@@ -13,6 +13,9 @@
 :root {
   --button-portfolio-background:rgba(245, 244, 250, 1)
 }
+:root {
+  --card-set-gap: 30px;
+}
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
@@ -637,14 +640,14 @@ span {
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
 }
 
 .card-set > .project-item-list {
-  flex-basis: calc(100% / 3 -30px);
-  margin-left: 30px;
-  margin-top: 30px;
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
   background: #ffffff;
 }
 .card-set>.project-item-list:hover,
