@@ -191,7 +191,6 @@ span {
 .icon-envelope-2 {
   fill: #757575;
   margin-right:10px;
-  align-items:baseline;
 }
 .contact-mail:hover .icon-envelope-2,
 .contact-mail:focus .icon-envelope-2 {
@@ -200,7 +199,6 @@ span {
 .icon-smartphone {
   fill: #757575;
   margin-right: 10px;
-  align-items:baseline
 }
 .contact-number:hover .icon-smartphone,
 .contact-number:focus .icon-smartphone {
