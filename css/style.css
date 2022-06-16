@@ -310,6 +310,8 @@ span {
   background-color: rgba(0, 0, 0, 0.2);
   fill: solid;
   transition:opacity 250ms, visibility hidden;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -774,6 +776,11 @@ span {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-thumb-portfolio:hover .overlay-portfolio {
