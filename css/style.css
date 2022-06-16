@@ -405,11 +405,12 @@ span {
 }
 .our-projects-item {
   position: relative;
+  
 }
-.about-us .our-projects-item::after{
+.about-us.our-projects-item::after->.about-us .our-projects-item::before{
   position: absolute;
   content: "";
-  display: block;
+  display: block; 
   width: 100%;
   height: 50px;
   background-color: rgba(47, 48, 58, 0.8);
@@ -420,18 +421,18 @@ span {
   position: absolute;
   bottom: 0;
   left: 0;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #FFFFFF;
-  display: flex;
+  color: rgba(255, 255, 255, 1);
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
   padding-top: 27px;
   padding-bottom: 27px;
+  fill: solid;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
 }
 .team-section {
   background-color: #f5f4fa;
@@ -748,27 +749,36 @@ span {
 }
 .card-thumb-portfolio:hover::before{
   position: absolute;
-  /* display: inline-block;
-  content: ""; */
+  display: inline-block;
+  content: "";
   opacity: 0;
   background-color: rgba(33, 150, 243, 0.9);
 }
 
-/* .overlay {
-  opacity: 0;
-  position: relative;
-  width: 370px;
-  height: 294px;
-  left: 215px;
-  top: 262px;
-} */
-/* .overlay:hover::before {
-  opacity: 1;
+.overlay-portfolio {
   position: absolute;
-} */
-/* .overlay-potrfolio {
-  position:absolute;
-} */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 0; 
+  transition: 250ms ease;
+  background: rgba(33, 150, 243, 0.9);
+  color:rgba(255, 255, 255, 1);
+  padding-left: 24px;  
+  padding-right: 24px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+}
+
+.card-thumb-portfolio:hover .overlay-portfolio {
+  height: 100%;
+}
 .card-set {
   display: flex;
   flex-wrap: wrap;
