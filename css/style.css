@@ -180,6 +180,7 @@ span {
   background-color: #2196F3;
   bottom:0;
   left:0;
+  border-radius: 2px;
 }
 .navigation-item:not(:last-child) {
   margin-right: 50px;
@@ -309,7 +310,7 @@ span {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   fill: solid;
-  transition:opacity 250ms, visibility hidden;
+  transition-position:opacity, visibility;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -710,7 +711,7 @@ span {
   margin-right: 8px;
 }
 .button-portfolio {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.88;
   text-align: left;
